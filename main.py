@@ -3,7 +3,9 @@ import pandas_profiling
 import streamlit as st
 
 from streamlit_pandas_profiling import st_profile_report
-x=st.file_uploader("Choose a CSV file")
+
+st.write(Auto Exploratory data analysis (EDA))
+x=st.file_uploader("Upload your CSV or excel file")
 if(x):
   
   df = pd.read_csv(x)
