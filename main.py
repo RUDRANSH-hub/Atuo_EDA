@@ -9,6 +9,7 @@ x=st.file_uploader("Upload your CSV or excel file")
 if(x):
   
   df = pd.read_csv(x)
+  
   pr = df.profile_report()
-
+  st.write("Developer: Rudransh Srivastava") 
   st_profile_report(pr)
