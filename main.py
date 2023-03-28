@@ -24,6 +24,7 @@ if spectra is not None:
     
     for i in range(5):
 
-        st.balloons()    
+        st.balloons() 
+    st.write("Wait Reporting is opening")
     report = create_report(spectra_df, title='My Report')
     report.show_browser()
